@@ -4,6 +4,7 @@
     <HeroSection />
     <AdPotentialSection />
     <RealCustomersGallery />
+    <SystemVideosSection />
   </div>
 </template>
 
@@ -11,5 +12,6 @@
 import Header from "@/components/layout/Header.vue";
 import HeroSection from "@/components/sections/HeroSection.vue";
 import AdPotentialSection from "@/components/sections/AdPotentialSection.vue";
+import SystemVideosSection from "@/components/sections/SystemVideosSection.vue";
 import RealCustomersGallery from "@/components/sections/RealCustomersGallery.vue";
 </script>

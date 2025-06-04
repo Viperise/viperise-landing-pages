@@ -39,14 +39,60 @@
       </div>
 
       <!-- Mobile Menu Button -->
-      <Button variant="ghost" size="icon" class="md:hidden">
-        <Menu class="h-5 w-5" />
+      <Button variant="ghost" size="icon" class="md:hidden" @click="isMenuOpen = !isMenuOpen">
+        <Menu v-if="!isMenuOpen" class="h-5 w-5" />
+        <X v-else class="h-5 w-5" />
       </Button>
     </div>
+
+    <!-- Mobile Navigation -->
+    <Transition
+      enter-active-class="transition duration-200 ease-out"
+      enter-from-class="transform scale-95 opacity-0"
+      enter-to-class="transform scale-100 opacity-100"
+      leave-active-class="transition duration-150 ease-in"
+      leave-from-class="transform scale-100 opacity-100"
+      leave-to-class="transform scale-95 opacity-0"
+    >
+      <div
+        v-if="isMenuOpen"
+        class="absolute top-16 left-0 right-0 bg-background border-b p-4 md:hidden"
+      >
+        <nav class="flex flex-col gap-4">
+          <a
+            href="#"
+            class="text-sm font-medium transition-colors hover:text-primary"
+            >Início</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium transition-colors hover:text-primary"
+            >Recursos</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium transition-colors hover:text-primary"
+            >Preços</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium transition-colors hover:text-primary"
+            >Sobre</a
+          >
+          <div class="flex flex-col gap-2 pt-2 border-t">
+            <Button variant="ghost" class="w-full justify-start">Entrar</Button>
+            <Button class="w-full justify-start">Começar Agora</Button>
+          </div>
+        </nav>
+      </div>
+    </Transition>
   </header>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-vue-next";
+import { Menu, X } from "lucide-vue-next";
+
+const isMenuOpen = ref(false);
 </script>

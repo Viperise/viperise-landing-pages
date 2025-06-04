@@ -46,16 +46,16 @@
 const containerRef = ref(null);
 const images = [
   "/real-customers/image-1.jpg",
-  "/real-customers/image-2.jpg",
-  "/real-customers/image-3.jpg",
-  "/real-customers/image-4.jpg",
+  "/real-customers/image-2.png",
+  "/real-customers/image-3.png",
+  "/real-customers/image-4.png",
 ];
 
 const swiper = useSwiper(containerRef, {
-  modules: ["autoplay"],
+  modules: ["autoplay", "pagination"],
   autoplay: {
     delay: 3000,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   loop: true,
   slidesPerView: 1,
