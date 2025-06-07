@@ -5,6 +5,7 @@
     <AdPotentialSection />
     <RealCustomersGallery />
     <SystemVideosSection />
+    <CompaniesCarousel />
   </div>
 </template>
 
@@ -14,4 +15,5 @@ import HeroSection from "@/components/sections/HeroSection.vue";
 import AdPotentialSection from "@/components/sections/AdPotentialSection.vue";
 import SystemVideosSection from "@/components/sections/SystemVideosSection.vue";
 import RealCustomersGallery from "@/components/sections/RealCustomersGallery.vue";
+import CompaniesCarousel from "@/components/sections/CompaniesCarousel.vue";
 </script>

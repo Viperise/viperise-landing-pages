@@ -186,6 +186,10 @@
   --sidebar-accent-foreground: oklch(0.25 0.02 240);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --swiper-navigation-color: #101828;
+  --swiper-theme-color: #101828;
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-pagination-color: #ffbb00;
 }
 
 .dark {
