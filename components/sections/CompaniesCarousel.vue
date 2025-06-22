@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="relative w-full overflow-hidden">
-      <div class="flex animate-scroll space-x-8">
+      <div class="flex animate-scroll space-x-8 px-4">
         <!-- Primeiro conjunto de logos -->
         <div
           v-for="(company, index) in companies"
@@ -42,20 +42,19 @@
 
 <script setup>
 const companies = [
-  { name: "Performe", image: "performe.jpg" },
+  { name: "Eudora", image: "eudora-logo.png" },
   { name: "Equilíbrio", image: "equilibrio.png" },
-  { name: "Betel Kids", image: "betel-kids.jpg" },
-  { name: "Monte Carlo", image: "monte-carlo.png" },
-  { name: "Brenda Silva Boutique", image: "brenda-silva-boutique.png" },
-  { name: "Imunoclin", image: "imunoclin.webp" },
-  { name: "Silva Car", image: "silva-car.jpg" },
-  { name: "Valle", image: "valle.svg" },
+  { name: "Betel Kids", image: "betel-kids.png" },
+  { name: "Monte Carlo", image: "monte-carlo.jpg" },
+  { name: "Semente do Saber", image: "semente-do-saber.jpg" },
+  { name: "O Boticário", image: "oboticario.jpg" },
+  { name: "Valle", image: "valle-prime.png" },
 ];
 </script>
 
 <style scoped>
 .animate-scroll {
-  animation: scroll 30s linear infinite forwards;
+  animation: scroll 10s linear infinite backwards;
 }
 
 @keyframes scroll {
@@ -63,7 +62,7 @@ const companies = [
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-30%);
   }
 }
 </style>
