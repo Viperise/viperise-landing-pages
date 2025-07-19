@@ -1,23 +1,26 @@
 <template>
   <div class="min-h-screen bg-background">
-    <Header />
-    <HeroSection />
+    <ReachoutHeader />
+    <ReachoutHeroSection />
     <AdPotentialSection />
     <RealCustomersGallery />
     <SystemVideosSection />
     <CompaniesCarousel />
     <PricingSection />
+    <Footer />
   </div>
 </template>
 
 <script setup>
-import Header from "@/components/layout/Header.vue";
-import HeroSection from "@/components/sections/HeroSection.vue";
+import ReachoutHeader from "@/components/layout/ReachoutHeader.vue";
+import Footer from "@/components/layout/Footer.vue";
 import AdPotentialSection from "@/components/sections/AdPotentialSection.vue";
 import SystemVideosSection from "@/components/sections/SystemVideosSection.vue";
 import RealCustomersGallery from "@/components/sections/RealCustomersGallery.vue";
 import CompaniesCarousel from "@/components/sections/CompaniesCarousel.vue";
 import PricingSection from "@/components/sections/PricingSection.vue";
+import ContactSection from "@/components/sections/ContactSection.vue";
+import ReachoutHeroSection from "~/components/sections/ReachoutHeroSection.vue";
 
 useSeoMeta({
   title: "Reachout - Plataforma de Anúncios e Vendas",
@@ -34,6 +37,11 @@ useSeoMeta({
     },
     { name: "author", content: "daywison silva, viperise" },
     { name: "robots", content: "index, follow" },
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      href: "/reachout-favicon.ico",
+    },
   ],
   ogImage: "https://i.ibb.co/hJdyMsNb/og-image.png",
   ogImageSecureUrl: "https://i.ibb.co/hJdyMsNb/og-image.png",

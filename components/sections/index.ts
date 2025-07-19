@@ -1,0 +1,12 @@
+export { default as HeroSection } from "./HeroSection.vue";
+export { default as ServicesSection } from "./ServicesSection.vue";
+export { default as AboutSection } from "./AboutSection.vue";
+export { default as ContactSection } from "./ContactSection.vue";
+export { default as CompaniesSection } from "./CompaniesSection.vue";
+export { default as CompaniesCarousel } from "./CompaniesCarousel.vue";
+export { default as PricingSection } from "./PricingSection.vue";
+export { default as RealCustomersGallery } from "./RealCustomersGallery.vue";
+export { default as SystemVideosSection } from "./SystemVideosSection.vue";
+export { default as AdPotentialSection } from "./AdPotentialSection.vue";
+export { default as HeroCarousel } from "./HeroCarousel.vue";
+export { default as HeroContent } from "./HeroContent.vue";
